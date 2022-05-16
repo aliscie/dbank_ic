@@ -1,6 +1,6 @@
 import Debug "mo:base/Debug";
 actor DBank{
-    var currValue = 300; //Motoko can infer that 300 is Nat so you dont need to add : Nat
+    stable var currValue = 300; //Motoko can infer that 300 is Nat so you dont need to add : Nat
 //    currValue := 100;
 
     public func topUp(amount : Nat){
