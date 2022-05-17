@@ -6,6 +6,7 @@ actor DBank{
     stable var initialTime = Time.now();
     stable var currValue : Float = 300; //Motoko can infer that 300 is Nat so you dont need to add : Nat
     currValue := 300;
+    initialTime := Time.now();
 
     public func topUp(amount : Float){
         currValue += amount;
